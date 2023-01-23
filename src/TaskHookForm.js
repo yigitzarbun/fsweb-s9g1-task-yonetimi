@@ -42,7 +42,6 @@ export default function TaskHookForm(props) {
         <input
           className="input-text"
           id="title"
-          name="title"
           type="text"
           {...register("title", {
             required: "Task başlığı yazmalısınız",
@@ -63,7 +62,6 @@ export default function TaskHookForm(props) {
           className="input-textarea"
           rows="3"
           id="description"
-          name="description"
           {...register("description", {
             required: "Task açıklaması yazmalısınız",
             minLength: {
@@ -84,7 +82,6 @@ export default function TaskHookForm(props) {
             <label className="input-checkbox" key={person}>
               <input
                 type="checkbox"
-                name="people"
                 value={person}
                 {...register("people", {
                   required: "Lütfen en az bir kişi seçin",
